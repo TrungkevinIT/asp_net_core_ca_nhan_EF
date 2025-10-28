@@ -24,7 +24,6 @@ namespace BaiTapQuayVideo_EF.Database
                 .WithMany() 
                 .HasForeignKey(c => c.ParentId) 
                 .OnDelete(DeleteBehavior.Restrict);
-
         }
     }
 }

@@ -23,22 +23,14 @@
             <option value="1">Đang bán</option>
             <option value="0">Ngừng bán</option>
             <option value="2">Hết hàng</option>
-            <option value="3">Ẩn</option>
+            <option value="3">Ẩ</option>
         </select>
     </div>
     <button type="submit" class="btn btn-primary mt-2">Thêm danh mục</button>
     <a asp-area="Admin" asp-controller="Product" asp-action="CreateProduct" class="btn btn-secondary mt-2">Quay lại</a>
-    @* nếu khác null thì truyền vào dữ liệu nếu thành công thì hiện ra chuỗi thêm sản phẩm thành công *@
-    @* nếu thất bại thì hiện ra chuỗi thêm sản phẩm thất bại. *@
-    @section Scripts {
-        @{
-            await Html.RenderPartialAsync("_ValidationScriptsPartial");
-        }
-    }
-    @* @if (ViewBag.Message != null) *@
-    @* { *@
-    @*     <div class="alert alert-info mt-4 text-center"> *@
-    @*         @ViewBag.Message *@
-    @*     </div> *@
-    @* } *@
 </form>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
