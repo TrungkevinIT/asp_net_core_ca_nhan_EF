@@ -1,11 +1,8 @@
 ﻿using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;// nap thu vien cac chu thich co ban ve vadition co ban dung cho kiem tra loi form
 using System.ComponentModel.DataAnnotations.Schema;// thu vien Annotations  danh rieng cho luoc do databse
-namespace BaiTapQuayVideo.Models
+namespace BaiTapQuayVideo_EF.Models
 {
-    public class StaffModel
-    {
-        [Table("Staffs")]
         public class Staffs
         {
             [Key]
@@ -40,5 +37,4 @@ namespace BaiTapQuayVideo.Models
             [Required]
             public byte Roles { get; set; }    // 0 = Staff, 1 = Admin
         }
-    }
 }
